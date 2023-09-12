@@ -9,21 +9,22 @@ Tautan Github    : https://github.com/monicaa37/my-project1.git
 
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
    jawab : 
+   
    **TAHAP 1 : MEMBUAT SEBUAT PROYEK DJANGO BARU**
       a. Membuat Direktori dan Mengaktifkan Virtual Environment
-      @ Pertama, buat direktori baru di lokasi yang Anda inginkan untuk proyek Anda. Anda dapat melakukannya melalui terminal atau dengan menggunakan file explorer. Setelah membuat direktori, masuk ke dalamnya dengan perintah cd.
-      @ Sekarang, Anda perlu membuat virtual environment di dalam direktori proyek Anda.
-      @ Gunakan perintah berikut untuk membuat venv. Perlu mengaktifkannya dengan perintah venv\Scripts\activate.
+      - Pertama, buat direktori baru di lokasi yang Anda inginkan untuk proyek Anda. Anda dapat melakukannya melalui terminal atau dengan menggunakan file explorer. Setelah membuat direktori, masuk ke dalamnya dengan perintah cd.
+      - Sekarang, Anda perlu membuat virtual environment di dalam direktori proyek Anda.
+      - Gunakan perintah berikut untuk membuat venv. Perlu mengaktifkannya dengan perintah venv\Scripts\activate.
      
      b. Menyiapkan Dependencies dan Membuat Proyek Django
-      @ Di dalam direktori yang sama, buat berkas requirements.txt dan tambahkan beberapa dependencies.
-      @ Lalu, Pasang dependencies dengan perintah berikut. Jangan lupa jalankan virtual environment terlebih dahulu sebelum menjalankan perintah berikut: pip install -r requirements.txt
-      @ Kemudian, buat proyek Django sesuai yang diinginkan dengan perintah berikut: django-admin startproject (nama proyek) 
+      - Di dalam direktori yang sama, buat berkas requirements.txt dan tambahkan beberapa dependencies.
+      - Lalu, Pasang dependencies dengan perintah berikut. Jangan lupa jalankan virtual environment terlebih dahulu sebelum menjalankan perintah berikut: pip install -r requirements.txt
+      - Kemudian, buat proyek Django sesuai yang diinginkan dengan perintah berikut: django-admin startproject (nama proyek) 
      
      c. Konfigurasi Proyek dan Menjalankan Server
-      @ Tambahkan tanda (*) pada ALLOWED_HOSTS di settings.py untuk keperluan deployment.
-      @ Jalankan server Django dengan perintah: python manage.py runserver.
-      @ Kemudian, nonaktifkan virtual environment dengan perintah: deactivate 
+      - Tambahkan tanda (*) pada ALLOWED_HOSTS di settings.py untuk keperluan deployment.
+      - Jalankan server Django dengan perintah: python manage.py runserver.
+      - Kemudian, nonaktifkan virtual environment dengan perintah: deactivate 
 
     **TAHAP 2 : MEMBUAT APLIKASI DENGAN NAMA MAIN PADA PROYEK TERSEBUT**
        a. Pastikan Anda sudah berada dalam direktori proyek Django Anda.
