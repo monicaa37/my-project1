@@ -5,7 +5,7 @@ NPM     : 2206082442
 Kelas   : PBP B
 
 Tautan Adaptable : https://inventory-monica.adaptable.app
-Tautan Github    : 
+Tautan Github    : https://github.com/monicaa37/my-project1.git
 
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
    jawab : 
