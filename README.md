@@ -9,8 +9,9 @@ Tautan Github    : https://github.com/monicaa37/my-project1.git
 
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
    jawab : 
-   
+
    **TAHAP 1 : MEMBUAT SEBUAT PROYEK DJANGO BARU**
+
       a. Membuat Direktori dan Mengaktifkan Virtual Environment
       - Pertama, buat direktori baru di lokasi yang Anda inginkan untuk proyek Anda. Anda dapat melakukannya melalui terminal atau dengan menggunakan file explorer. Setelah membuat direktori, masuk ke dalamnya dengan perintah cd.
       - Sekarang, Anda perlu membuat virtual environment di dalam direktori proyek Anda.
@@ -27,9 +28,13 @@ Tautan Github    : https://github.com/monicaa37/my-project1.git
       - Kemudian, nonaktifkan virtual environment dengan perintah: deactivate 
 
     **TAHAP 2 : MEMBUAT APLIKASI DENGAN NAMA MAIN PADA PROYEK TERSEBUT**
+
        a. Pastikan Anda sudah berada dalam direktori proyek Django Anda.
+
        b. Jalankan perintah berikut untuk membuat aplikasi "main": python manage.py startapp main .
+
        c. Setelah membuat aplikasi "main," Anda perlu mendaftarkannya ke dalam proyek Anda.
+       
        d. Buka file nama_proyek/settings.py dan temukan variabel INSTALLED_APPS. Tambahkan nama aplikasi "main" ke dalam daftar aplikasi yang terdaftar.
 
 2. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
