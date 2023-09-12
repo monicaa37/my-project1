@@ -29,13 +29,13 @@ Tautan Github    : https://github.com/monicaa37/my-project1.git
 
     **TAHAP 2 : MEMBUAT APLIKASI DENGAN NAMA MAIN PADA PROYEK TERSEBUT**
 
-       a. Pastikan Anda sudah berada dalam direktori proyek Django Anda.
+      - Pastikan Anda sudah berada dalam direktori proyek Django Anda.
 
-       b. Jalankan perintah berikut untuk membuat aplikasi "main": python manage.py startapp main .
+      - Jalankan perintah berikut untuk membuat aplikasi "main": python manage.py startapp main .
 
-       c. Setelah membuat aplikasi "main," Anda perlu mendaftarkannya ke dalam proyek Anda.
-       
-       d. Buka file nama_proyek/settings.py dan temukan variabel INSTALLED_APPS. Tambahkan nama aplikasi "main" ke dalam daftar aplikasi yang terdaftar.
+      - Setelah membuat aplikasi "main," Anda perlu mendaftarkannya ke dalam proyek Anda.
+
+      - Buka file nama_proyek/settings.py dan temukan variabel INSTALLED_APPS. Tambahkan nama aplikasi "main" ke dalam daftar aplikasi yang terdaftar.
 
 2. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html.
 jawab : ![Bagan Request Monica](Request_Bagan.png)
