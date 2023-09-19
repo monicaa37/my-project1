@@ -4,11 +4,10 @@ NPM     : 2206082442
 
 Kelas   : PBP B
 
-Tugas 2
-
 Tautan Adaptable : https://inventory-monica.adaptable.app
 Tautan Github    : https://github.com/monicaa37/my-project1.git
 
+------------------------------------- TUGAS 2 -------------------------------------
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
    jawab : 
 
@@ -64,3 +63,59 @@ jawab :
     
       Perbedaan ketiganya adalah dalam bagaimana komponen-komponen ini berinteraksi dan siapa yang bertanggung jawab untuk apa. MVC dan MVT adalah konsep yang lebih tua dan sering digunakan dalam pengembangan aplikasi web dengan back-end yang kuat, sedangkan MVVM adalah pendekatan yang lebih modern untuk pengembangan aplikasi berbasis klien dengan fokus pada pemisahan antara tampilan dan logika bisnis.
    
+
+-------------------------------------- TUGAS 3 ------------------------------------
+1. Apa perbedaan antara form POST dan form GET dalam Django?
+ans : 
+- Method GET
+a. Jangan gunakan GET bila kita ingin membuat form untuk data yang sensitif/ mempunyai privasi, misalnya username,password (karena akan tampil di URL)
+b. Sebaliknya gunakan GET untuk data dengan informasi yang umum, seperti nama,email atau lainnya
+c. Gunakan method GET untuk data yang relatif kecil
+
+- Method POST
+a. Gunakan method POST untuk jenis informasi data pribadi misalnya username dan password ,karena lebih aman dibandingkan method GET dan data tidak akan tampil di URL
+b. Gunakan method POST untuk data yang relatif besar.
+
+2. Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
+ans : 
+- XML (eXtensible Markup Language): Digunakan untuk menyimpan dan mengirim data terstruktur dengan menggunakan tag pembuka dan penutup. Fleksibel dan kuat, cocok untuk data yang sangat terstruktur.
+
+- JSON (JavaScript Object Notation): Digunakan untuk pertukaran data yang ringan, menggunakan sintaks objek dan array mirip JavaScript. Sederhana dan mudah dibaca, cocok untuk data sederhana.
+
+- HTML (HyperText Markup Language): Bahasa markup untuk membuat tampilan halaman web. Digunakan untuk mendefinisikan struktur dan konten halaman web, bukan untuk pertukaran data.
+
+3. Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
+ans : 
+JSON sering digunakan dalam aplikasi web modern karena ringan, mudah dibaca, mendukung berbagai struktur data, independen dari bahasa, efisien dalam penggunaan bandwidth, mendukung RESTful APIs, dan memiliki dukungan luas.
+
+4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step
+ans : 
+- Membuat Input Form:
+a. Buat model objek yang ingin Anda tambahkan.
+b. Buat form Django untuk model tersebut di forms.py.
+
+- Migrasi Database:
+a. Buat dan terapkan migrasi untuk mengaktifkan model di database dengan perintah makemigrations dan migrate.
+
+- Membuat 5 Fungsi Views:
+Buat views untuk:
+   a. Menambahkan objek dengan form input.
+   b. Melihat objek dalam format HTML.
+   c. Melihat objek dalam format XML.
+   d. Melihat objek dalam format JSON.
+   e. Melihat objek berdasarkan ID dalam format XML dan JSON.
+
+- Membuat Template HTML:
+a. Buat file HTML untuk tampilan objek dan form input.
+
+- Mengatur URL Routing:
+a. Tentukan URL untuk setiap view di file urls.py aplikasi Anda.
+
+Dengan langkah-langkah ini, Anda akan memiliki aplikasi Django yang memungkinkan pengguna untuk menambahkan objek dan melihatnya dalam berbagai format. Pastikan untuk menyesuaikan model, form, dan template sesuai kebutuhan aplikasi Anda.
+
+hasil screenshot : 
+1. json 
+![screenshot json](images/json.png)
+![screenshot json id](images/json_id.png)
+![screenshot xml](images/xml.png)
+![screenshot xml id](images/xml_id.png)
