@@ -68,11 +68,13 @@ jawab :
 1. Apa perbedaan antara form POST dan form GET dalam Django?
 ans : 
 - Method GET
+
 a. Jangan gunakan GET bila kita ingin membuat form untuk data yang sensitif/ mempunyai privasi, misalnya username,password (karena akan tampil di URL)
 b. Sebaliknya gunakan GET untuk data dengan informasi yang umum, seperti nama,email atau lainnya
 c. Gunakan method GET untuk data yang relatif kecil
 
 - Method POST
+
 a. Gunakan method POST untuk jenis informasi data pribadi misalnya username dan password ,karena lebih aman dibandingkan method GET dan data tidak akan tampil di URL
 b. Gunakan method POST untuk data yang relatif besar.
 
@@ -85,19 +87,24 @@ ans :
 - HTML (HyperText Markup Language): Bahasa markup untuk membuat tampilan halaman web. Digunakan untuk mendefinisikan struktur dan konten halaman web, bukan untuk pertukaran data.
 
 3. Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
+
 ans : 
 JSON sering digunakan dalam aplikasi web modern karena ringan, mudah dibaca, mendukung berbagai struktur data, independen dari bahasa, efisien dalam penggunaan bandwidth, mendukung RESTful APIs, dan memiliki dukungan luas.
 
 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step
+
 ans : 
 - Membuat Input Form:
-a. Buat model objek yang ingin Anda tambahkan.
-b. Buat form Django untuk model tersebut di forms.py.
+
+   a. Buat model objek yang ingin Anda tambahkan.
+   b. Buat form Django untuk model tersebut di forms.py.
 
 - Migrasi Database:
-a. Buat dan terapkan migrasi untuk mengaktifkan model di database dengan perintah makemigrations dan migrate.
+
+   a. Buat dan terapkan migrasi untuk mengaktifkan model di database dengan perintah makemigrations dan migrate.
 
 - Membuat 5 Fungsi Views:
+
 Buat views untuk:
    a. Menambahkan objek dengan form input.
    b. Melihat objek dalam format HTML.
@@ -106,21 +113,27 @@ Buat views untuk:
    e. Melihat objek berdasarkan ID dalam format XML dan JSON.
 
 - Membuat Template HTML:
-a. Buat file HTML untuk tampilan objek dan form input.
+
+   a. Buat file HTML untuk tampilan objek dan form input.
 
 - Mengatur URL Routing:
-a. Tentukan URL untuk setiap view di file urls.py aplikasi Anda.
+
+   a. Tentukan URL untuk setiap view di file urls.py aplikasi Anda.
 
 Dengan langkah-langkah ini, Anda akan memiliki aplikasi Django yang memungkinkan pengguna untuk menambahkan objek dan melihatnya dalam berbagai format. Pastikan untuk menyesuaikan model, form, dan template sesuai kebutuhan aplikasi Anda.
 
 hasil screenshot postman : 
 1. json 
 ![screenshot json](images/json.png)
+
 2. json id
 ![screenshot json id](images/json_id.png)
+
 3. xml 
 ![screenshot xml](images/xml.png)
+
 4. xml id 
 ![screenshot xml id](images/xml_id.png)
+
 5. html 
 ![screenshot html](images/html.png)
