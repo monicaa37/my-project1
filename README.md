@@ -113,9 +113,14 @@ a. Tentukan URL untuk setiap view di file urls.py aplikasi Anda.
 
 Dengan langkah-langkah ini, Anda akan memiliki aplikasi Django yang memungkinkan pengguna untuk menambahkan objek dan melihatnya dalam berbagai format. Pastikan untuk menyesuaikan model, form, dan template sesuai kebutuhan aplikasi Anda.
 
-hasil screenshot : 
+hasil screenshot postman : 
 1. json 
 ![screenshot json](images/json.png)
+2. json id
 ![screenshot json id](images/json_id.png)
+3. xml 
 ![screenshot xml](images/xml.png)
+4. xml id 
 ![screenshot xml id](images/xml_id.png)
+5. html 
+![screenshot html](images/html.png)
