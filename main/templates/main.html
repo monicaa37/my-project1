@@ -3,7 +3,7 @@
 
 <h1><mark>SHOPPING KAOS</mark></h1>
 
-<p>Name: Monica Gloria Damanik </p> <!-- Ubahlah sesuai dengan nama kamu -->
+<p>Username: {{name}} </p> <!-- Ubahlah sesuai dengan nama kamu -->
 <p>Class: PBP B </p> <!-- Ubahlah sesuai dengan kelas kamu -->
 <h2>Pilih Produk</h2>
 
@@ -50,6 +50,12 @@
 <a href="{% url 'main:create_product' %}">
     <button>
         Add New Product
+    </button>
+</a>
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+<a href="{% url 'main:logout' %}">
+    <button>
+        Logout
     </button>
 </a>
 

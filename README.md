@@ -7,7 +7,7 @@ Kelas   : PBP B
 Tautan Adaptable : https://inventory-monica.adaptable.app
 Tautan Github    : https://github.com/monicaa37/my-project1.git
 
-------------------------------------- TUGAS 2 -------------------------------------
+---------------------------------------------------TUGAS 2----------------------------------------------------
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
    jawab : 
 
@@ -64,7 +64,7 @@ jawab :
       Perbedaan ketiganya adalah dalam bagaimana komponen-komponen ini berinteraksi dan siapa yang bertanggung jawab untuk apa. MVC dan MVT adalah konsep yang lebih tua dan sering digunakan dalam pengembangan aplikasi web dengan back-end yang kuat, sedangkan MVVM adalah pendekatan yang lebih modern untuk pengembangan aplikasi berbasis klien dengan fokus pada pemisahan antara tampilan dan logika bisnis.
    
 
--------------------------------------- TUGAS 3 ------------------------------------
+------------------------------------------------------TUGAS 3---------------------------------------------------
 1. Apa perbedaan antara form POST dan form GET dalam Django?
 ans : 
 - Method GET
@@ -137,3 +137,94 @@ hasil screenshot postman :
 
 5. html 
 ![screenshot html](images/html.png)
+
+-----------------------------------------------------TUGAS 4-----------------------------------------------------
+
+1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
+
+ans : UserCreationForm adalah salah satu formulir yang disediakan oleh Django, yang digunakan untuk membuat formulir pendaftaran atau registrasi pengguna dalam aplikasi web yang menggunakan Django sebagai frameworknya.
+
+- Kekurangan : 
+a. Kustomisasi Terbatas: Meskipun formulir ini mudah digunakan, kustomisasi terhadap tampilan dan perilaku formulir bisa menjadi terbatas.
+b. Kemanan: Formulir ini membutuhkan perhatian khusus terkait keamanan, terutama dalam hal penyimpanan password pengguna.
+
+- Kelebihan :
+a. Mudah digunakan
+b. Integrasi dengan Django Authentication
+
+2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
+
+ans: 
+a. Autentikasi (Authentication): Autentikasi adalah proses verifikasi identitas pengguna. Ini memastikan bahwa pengguna yang mencoba mengakses aplikasi adalah mereka yang mereka klaim.
+
+b. Otorisasi adalah proses mengontrol apa yang dapat dilakukan oleh pengguna yang sudah diotentikasi di dalam aplikasi. Ini berfokus pada hak akses pengguna terhadap berbagai sumber daya dan tindakan dalam aplikasi.
+
+Mengapa penting ? karena Autentikasi dan otorisasi bekerja sama untuk menjaga keamanan aplikasi dengan memastikan hanya pengguna yang sah yang dapat mengakses dan mengedit data atau fitur tertentu. Autentikasi dan otorisasi juga membantu aplikasi mematuhi peraturan dan kebijakan privasi yang berlaku dengan mengendalikan akses ke data sensitif.
+
+3. Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
+
+ans : Cookies adalah mekanisme penyimpanan data sederhana yang digunakan dalam konteks aplikasi web untuk menyimpan informasi di sisi klien (browser) yang dapat digunakan oleh server untuk mengenali dan mengidentifikasi pengguna.
+
+Django menggunakan cookies untuk mengelola data sesi pengguna dengan cara berikut:
+
+- Penyimpanan Data Sesi: Ketika pengguna melakukan tindakan seperti login, Django dapat menyimpan data sesi pengguna (misalnya, ID pengguna yang masuk) dalam cookie.
+
+- Pengiriman Data Sesi: Cookie yang berisi data sesi akan dikirimkan kembali ke server setiap kali pengguna melakukan permintaan ke situs web. Ini memungkinkan Django untuk mengidentifikasi pengguna dan mengambil data sesi yang sesuai.
+
+- Validasi Data Sesi: Django memverifikasi data sesi dalam cookie untuk memastikan keasliannya dan melindungi terhadap manipulasi oleh pengguna yang tidak sah.
+
+- Akses Data Sesi: Pengembang dapat mengakses data sesi pengguna dengan mudah dalam tampilan Django atau bagian lain dari aplikasi. Data sesi dapat digunakan untuk menyesuaikan pengalaman pengguna dan menyimpan informasi penting.
+
+- Penghapusan Data Sesi: Django juga mendukung otomatisasi dalam penghapusan data sesi yang kadaluwarsa.
+
+4. Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
+
+ans : Penggunaan cookies dalam pengembangan web memiliki sejumlah aspek yang perlu diwaspadai terkait dengan keamanan dan privasi pengguna. Meskipun cookies adalah alat yang umum digunakan untuk menyimpan informasi sederhana di sisi klien (browser), ada beberapa risiko potensial yang perlu diidentifikasi dan dikelola:
+
+a. Tracking dan Privasi Pengguna
+
+b. Risiko Manipulasi Cookie
+
+c. Kebocoran Data
+
+5.  Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
+
+Ceklist 1 
+
+- Membuat Fungsi dan Form Registrasi
+
+   1. Buka views.py yang ada pada subdirektori main dan buatlah fungsi dengan nama register yang menerima parameter request.
+   2. Tambahkan import redirect, UserCreationForm, dan messages. 
+   3. Buatlah berkas HTML baru dengan nama register.html
+   4. Impor fungsi yang sudah dan tambahkan path url 
+
+- Membuat Fungsi Login 
+
+   1. Buatlah fungsi login
+   2. Tambahkan import authenticate dan login
+   3. Buatlah berkas HTML baru dengan nama login.html
+   4. Impor fungsi yang sudah dibuat dan tambahkan ke path url
+
+- Membuat Fungsi Logout 
+   (Lakukan hal yang sama dengan fungsi login)
+
+- Merestriksi Akses Halaman Main
+   Tambahkan import login_required pada berkas view
+
+- Menggunakan Data Dari Cookies
+   1. Tambahkan import HttpResponseRedirect, reverse, dan datetime
+   2. Lalu ubah fungsi login, logout dan show main sesuai tutorial
+
+- Menghubungkan Item Product dengan User (Termasuk Ceklist 3)
+   1. Pada berkas item, import kode, lalu pada model product tambahkan kode, pada fungsi show main dan pada berkas view juga perlu dilakukan perubahan kode sesuai dengan tutorial.  
+
+   2. Jangan lupa lakukan mograso untuk menyimpan semua perubahan 
+
+Ceklist 2 
+
+   - Menampilkan detail informasi pengguna yang sedang logged in seperti username dapat dilakukan dengan menghubungkan main html pada atribut name. 
+
+Ceklist 4
+
+   - Membuat dua akun pengguna dengan masing-masing tiga dummy data menggunakan model yang telah dibuat pada aplikasi sebelumnya untuk setiap akun di lokal: Untuk membuat dummy data dapat dilakukan dengan "Add new product" pada halaman html. 
+
