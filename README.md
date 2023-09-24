@@ -155,6 +155,7 @@ b. Integrasi dengan Django Authentication
 2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
 
 ans: 
+
 a. Autentikasi (Authentication): Autentikasi adalah proses verifikasi identitas pengguna. Ini memastikan bahwa pengguna yang mencoba mengakses aplikasi adalah mereka yang mereka klaim.
 
 b. Otorisasi adalah proses mengontrol apa yang dapat dilakukan oleh pengguna yang sudah diotentikasi di dalam aplikasi. Ini berfokus pada hak akses pengguna terhadap berbagai sumber daya dan tindakan dalam aplikasi.
@@ -163,7 +164,7 @@ Mengapa penting ? karena Autentikasi dan otorisasi bekerja sama untuk menjaga ke
 
 3. Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
 
-ans : Cookies adalah mekanisme penyimpanan data sederhana yang digunakan dalam konteks aplikasi web untuk menyimpan informasi di sisi klien (browser) yang dapat digunakan oleh server untuk mengenali dan mengidentifikasi pengguna.
+ans : <br> Cookies adalah mekanisme penyimpanan data sederhana yang digunakan dalam konteks aplikasi web untuk menyimpan informasi di sisi klien (browser) yang dapat digunakan oleh server untuk mengenali dan mengidentifikasi pengguna.
 
 Django menggunakan cookies untuk mengelola data sesi pengguna dengan cara berikut:
 
@@ -179,7 +180,7 @@ Django menggunakan cookies untuk mengelola data sesi pengguna dengan cara beriku
 
 4. Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
 
-ans : Penggunaan cookies dalam pengembangan web memiliki sejumlah aspek yang perlu diwaspadai terkait dengan keamanan dan privasi pengguna. Meskipun cookies adalah alat yang umum digunakan untuk menyimpan informasi sederhana di sisi klien (browser), ada beberapa risiko potensial yang perlu diidentifikasi dan dikelola:
+ans : <br>Penggunaan cookies dalam pengembangan web memiliki sejumlah aspek yang perlu diwaspadai terkait dengan keamanan dan privasi pengguna. Meskipun cookies adalah alat yang umum digunakan untuk menyimpan informasi sederhana di sisi klien (browser), ada beberapa risiko potensial yang perlu diidentifikasi dan dikelola:
 
 a. Tracking dan Privasi Pengguna
 
