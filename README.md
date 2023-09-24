@@ -142,7 +142,7 @@ hasil screenshot postman :
 
 1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
 
-ans : UserCreationForm adalah salah satu formulir yang disediakan oleh Django, yang digunakan untuk membuat formulir pendaftaran atau registrasi pengguna dalam aplikasi web yang menggunakan Django sebagai frameworknya.
+ans :<br> UserCreationForm adalah salah satu formulir yang disediakan oleh Django, yang digunakan untuk membuat formulir pendaftaran atau registrasi pengguna dalam aplikasi web yang menggunakan Django sebagai frameworknya.
 
 - Kekurangan : 
 a. Kustomisasi Terbatas: Meskipun formulir ini mudah digunakan, kustomisasi terhadap tampilan dan perilaku formulir bisa menjadi terbatas.
