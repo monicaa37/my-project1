@@ -154,8 +154,7 @@ b. Integrasi dengan Django Authentication
 
 2. Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
 
-ans: 
-
+ans: <br>
 a. Autentikasi (Authentication): Autentikasi adalah proses verifikasi identitas pengguna. Ini memastikan bahwa pengguna yang mencoba mengakses aplikasi adalah mereka yang mereka klaim.
 
 b. Otorisasi adalah proses mengontrol apa yang dapat dilakukan oleh pengguna yang sudah diotentikasi di dalam aplikasi. Ini berfokus pada hak akses pengguna terhadap berbagai sumber daya dan tindakan dalam aplikasi.
