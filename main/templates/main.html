@@ -1,10 +1,67 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1><mark>SHOPPING KAOS</mark></h1>
+<style>
+    body {
+        background-color: #F9F5F6;
+    }
 
-<p>Username: {{name}} </p> <!-- Ubahlah sesuai dengan nama kamu -->
-<p>Class: PBP B </p> <!-- Ubahlah sesuai dengan kelas kamu -->
+    /* Tambahkan CSS untuk warna yang berbeda di baris terakhir */
+    .last-row {
+        background-color: #98FB98; /* Warna background untuk baris terakhir */
+        color: #000; /* Warna teks untuk baris terakhir */
+    }
+
+    body {
+        background-color: #F9F5F6;
+    }
+</style>
+
+
+
+{% comment %} <p>Class: PBP B </p>  {% endcomment %}
+<body>
+
+    <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-header">PROMO</div>
+        <div class="card-body">
+          <h5 class="card-title">AYO JANGAN SAMPAI KETINGGALAN</h5>
+          <p class="card-text">BUY 1 GET 2</p>
+        </div>
+      </div>
+
+      
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid" style="background-color: #7EAA92;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">SHOPPING PAGE</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Welcome {{name}} !</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    
+</body>
+
+
+{% comment %} <h1><mark>SHOPPING KAOS</mark></h1> {% endcomment %}
+
 <h2>Pilih Produk</h2>
 
 <h5>1. Produk 1</h5>
@@ -13,6 +70,7 @@
     <li><cite>Amount:</cite> 1</li>
     <li><cite>Description:</cite> Warna hitam</li>
     <li><cite>Price:</cite> Rp 70000</li>
+    <li><cite>Ukuran:</cite> S - M</li>
 </ul>
 <button>Cek Out Yukk</button>
 
@@ -22,10 +80,12 @@
     <li><cite>Amount:</cite> 2</li>
     <li><cite>Description:</cite> Request warna</li>
     <li><cite>Price:</cite> Rp 100000</li>
+    <li><cite>Ukuran:</cite> L - XL</li>
 </ul>
 <button>Cek Out Yukk</button>
 
 <table>
+  
     <tr>
         <th>Name</th>
         <th>Price</th>
@@ -36,11 +96,29 @@
     {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
 
     {% for product in products %}
-    <tr>
+    {% comment %} memeriksa apakah iterasi saat ini adalah iterasi terakhir dalam loop. {% endcomment %}
+    {% comment %} forloop.last adalah atribut dari variabel forloop yang bernilai True jika iterasi saat ini adalah iterasi terakhir dalam loop. {% endcomment %}
+    {% comment %}  jika iterasi saat ini adalah iterasi terakhir (atau baris terakhir dalam tabel), maka tag <tr> akan memiliki kelas CSS last-row {% endcomment %}
+    <tr {% if forloop.last %}class="last-row"{% endif %}> 
         <td>{{product.name}}</td>
         <td>{{product.price}}</td>
         <td>{{product.description}}</td>
         <td>{{product.date_added}}</td>
+
+        <td>
+            <a href="{% url 'main:edit_product' product.pk %}">
+              
+                <button>
+                    Edit
+                </button>
+            </a>
+
+            <a href="{% url 'main:delete_product' product.pk %}">
+                <button>
+                    Delete
+                </button>
+            </a>
+        </td>
     </tr>
     {% endfor %}
 </table>
@@ -58,5 +136,6 @@
         Logout
     </button>
 </a>
+
 
 {% endblock content %}

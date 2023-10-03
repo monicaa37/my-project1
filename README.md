@@ -138,7 +138,7 @@ hasil screenshot postman :
 5. html 
 ![screenshot html](images/html.png)
 
------------------------------------------------------TUGAS 4-----------------------------------------------------
+----------------------------------------TUGAS4 --------------------------------------
 
 1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
 
@@ -228,3 +228,51 @@ Ceklist 4
 
    - Membuat dua akun pengguna dengan masing-masing tiga dummy data menggunakan model yang telah dibuat pada aplikasi sebelumnya untuk setiap akun di lokal: Untuk membuat dummy data dapat dilakukan dengan "Add new product" pada halaman html. 
 
+-------------------------------------------------------TUGAS 5----------------------------------------------------------
+1.  Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
+
+Ans : <br> Manfaat Element Selector:
+- Pemilihan Umum: <br>
+Manfaat: Memilih semua elemen dari jenis tertentu. <br>
+Kapan Menggunakannya: Saat ingin memberi gaya umum pada elemen, contohnya, p { color: blue; }.
+
+- Default Styling:<br>
+
+Manfaat: Memberikan gaya default pada elemen tanpa menggunakan kelas atau ID. <br>
+Kapan Menggunakannya: Untuk memberi gaya dasar pada elemen HTML seperti <p>, <h1>, atau <a>.
+
+- Penggunaan di CSS Framework:<br>
+Manfaat: Digunakan dalam kerangka kerja CSS untuk memberi aturan gaya global.<br>
+Kapan Menggunakannya: Dalam pengembangan dengan kerangka kerja CSS untuk memastikan konsistensi desain.
+
+- Meningkatkan Keterbacaan Kode: <br>
+Manfaat: Meningkatkan keterbacaan kode CSS. <br>
+Kapan Menggunakannya: Ketika ingin membuat gaya dasar dan konsisten untuk elemen HTML dasar.
+
+2. Jelaskan HTML 5 Tag yang kamu ketahui.
+
+ans : <br>
+   a. <html> — tag utama dalam HTML;
+   b. <head> — untuk bagian kepala dari dokumen;
+   c. <title> — untuk judul web;
+   d. <body> — untuk bagian body dari dokumen.
+   e. <button> - tag untuk membuat sebuah tombol yang dapat diklik
+
+3.  Jelaskan perbedaan antara margin dan padding.
+
+ans: <br> Margin dan padding adalah dua properti CSS yang memengaruhi tata letak elemen di halaman web. Margin adalah ruang di luar elemen, menciptakan jarak antara elemen tersebut dan elemen lain di sekitarnya, sementara padding adalah ruang di dalam elemen, di antara konten elemen dan tepi elemennya. Dengan kata lain, margin mengatur jarak antara elemen dan elemen lainnya, sedangkan padding mengatur jarak antara konten elemen dan tepi elemen tersebut. Ini memungkinkan pengaturan tata letak dan ruang di sekitar elemen secara fleksibel dalam desain web.
+
+4. Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?
+
+ans: <br> Tailwind CSS adalah kerangka kerja CSS "utility-first" yang memberikan banyak kelas utilitas, memungkinkan pengembang untuk membuat desain yang sangat kustom dengan menggabungkan kelas-kelas tersebut.
+<br> Bootstrap, di sisi lain, adalah kerangka kerja CSS "component-based" yang menyediakan sejumlah besar komponen siap pakai dan gaya pra-didesain untuk membangun desain yang cepat dan konsisten.
+<br> Tailwind memberi kebebasan kreatif dan tingkat kontrol yang tinggi, sementara Bootstrap menawarkan kecepatan pengembangan dan konsistensi desain dengan sedikit usaha. Pemilihan antara keduanya tergantung pada kebutuhan proyek dan preferensi pengembang terkait tingkat kustomisasi dan kompleksitas desain yang diinginkan.
+
+5. Kustomisasi desain pada templat HTML dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) 
+
+   - Kustomisasi halaman login, register, dan tambah inventori semenarik mungkin.
+   <br> ans: Pada halaman login, main dan register dilakukan penyisipan css dengan tag yang diawali style. Lalu, menambahkan kode kode untuk melakukan kustomisasi halaman logi, main dan register. 
+   <br> Untuk menambahkan inventori, dapat dilakukan dengan menambahkan pada main html
+
+   - Kustomisasi halaman daftar inventori menjadi lebih berwarna maupun menggunakan apporach lain seperti menggunakan Card.
+   <br> Untuk menggunakan Card yang ada pada bootstrap, dapat dilakukan dengan copy kode yang ada pada wabsite bootstrap. Lalu, letakkan pada main html di dalam tag body. 

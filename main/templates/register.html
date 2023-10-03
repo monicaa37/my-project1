@@ -5,6 +5,63 @@
 {% endblock meta %}
 
 {% block content %}  
+<style>
+    body {
+        background-color: #AAC8A7; /* Warna latar belakang biru */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login {
+        background-color: #C3EDC0;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .login h1 {
+        margin-bottom: 20px;
+    }
+
+    .login form table {
+        margin: 0 auto;
+    }
+
+    .login input[type="text"],
+    .login input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .login input[type="submit"] {
+        background-color: #A2CDB0;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .login input[type="submit"]:hover {
+        background-color: #85A389;
+    }
+
+    .login ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .login ul li {
+        color: red;
+    }
+</style>
+
 
 <div class = "login">
     
