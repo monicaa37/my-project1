@@ -237,7 +237,6 @@ Manfaat: Memilih semua elemen dari jenis tertentu. <br>
 Kapan Menggunakannya: Saat ingin memberi gaya umum pada elemen, contohnya, p { color: blue; }.
 
 - Default Styling:<br>
-
 Manfaat: Memberikan gaya default pada elemen tanpa menggunakan kelas atau ID. <br>
 Kapan Menggunakannya: Untuk memberi gaya dasar pada elemen HTML seperti tag p, h1, atau a.
 
@@ -253,26 +252,34 @@ Kapan Menggunakannya: Ketika ingin membuat gaya dasar dan konsisten untuk elemen
 
 ans : <br>
    a. tag html — tag utama dalam HTML;
+
    b. tag head — untuk bagian kepala dari dokumen;
+
    c. tag title — untuk judul web;
+
    d. tag body — untuk bagian body dari dokumen.
+
    e. tag button - tag untuk membuat sebuah tombol yang dapat diklik
 
 3.  Jelaskan perbedaan antara margin dan padding.
 
-ans: <br> Margin dan padding adalah dua properti CSS yang memengaruhi tata letak elemen di halaman web. Margin adalah ruang di luar elemen, menciptakan jarak antara elemen tersebut dan elemen lain di sekitarnya, sementara padding adalah ruang di dalam elemen, di antara konten elemen dan tepi elemennya. Dengan kata lain, margin mengatur jarak antara elemen dan elemen lainnya, sedangkan padding mengatur jarak antara konten elemen dan tepi elemen tersebut. Ini memungkinkan pengaturan tata letak dan ruang di sekitar elemen secara fleksibel dalam desain web.
+ans: <br> Margin dan padding adalah dua properti CSS yang memengaruhi tata letak elemen di halaman web. Margin adalah ruang di luar elemen, menciptakan jarak antara elemen tersebut dan elemen lain di sekitarnya, sementara padding adalah ruang di dalam elemen, di antara konten elemen dan tepi elemennya.<br> Dengan kata lain, margin mengatur jarak antara elemen dan elemen lainnya, sedangkan padding mengatur jarak antara konten elemen dan tepi elemen tersebut. Ini memungkinkan pengaturan tata letak dan ruang di sekitar elemen secara fleksibel dalam desain web.
 
 4. Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?
 
 ans: <br> Tailwind CSS adalah kerangka kerja CSS "utility-first" yang memberikan banyak kelas utilitas, memungkinkan pengembang untuk membuat desain yang sangat kustom dengan menggabungkan kelas-kelas tersebut.
+
 <br> Bootstrap, di sisi lain, adalah kerangka kerja CSS "component-based" yang menyediakan sejumlah besar komponen siap pakai dan gaya pra-didesain untuk membangun desain yang cepat dan konsisten.
-<br> Tailwind memberi kebebasan kreatif dan tingkat kontrol yang tinggi, sementara Bootstrap menawarkan kecepatan pengembangan dan konsistensi desain dengan sedikit usaha. Pemilihan antara keduanya tergantung pada kebutuhan proyek dan preferensi pengembang terkait tingkat kustomisasi dan kompleksitas desain yang diinginkan.
+
+<br> Penggunaan Tailwind memberi kebebasan kreatif dan tingkat kontrol yang tinggi, sementara Bootstrap menawarkan kecepatan pengembangan dan konsistensi desain dengan sedikit usaha. Pemilihan antara keduanya tergantung pada kebutuhan proyek dan preferensi pengembang terkait tingkat kustomisasi dan kompleksitas desain yang diinginkan.
 
 5. Kustomisasi desain pada templat HTML dengan menggunakan CSS atau CSS framework (seperti Bootstrap, Tailwind, Bulma) 
 
    - Kustomisasi halaman login, register, dan tambah inventori semenarik mungkin.
+
    <br> ans: Pada halaman login, main dan register dilakukan penyisipan css dengan tag yang diawali style. Lalu, menambahkan kode kode untuk melakukan kustomisasi halaman logi, main dan register. 
    <br> Untuk menambahkan inventori, dapat dilakukan dengan menambahkan pada main html
 
    - Kustomisasi halaman daftar inventori menjadi lebih berwarna maupun menggunakan apporach lain seperti menggunakan Card.
-   <br> Untuk menggunakan Card yang ada pada bootstrap, dapat dilakukan dengan copy kode yang ada pada wabsite bootstrap. Lalu, letakkan pada main html di dalam tag body. 
+   
+   <br>ans : Untuk menggunakan Card yang ada pada bootstrap, dapat dilakukan dengan copy kode yang ada pada wabsite bootstrap. Lalu, letakkan pada main html di dalam tag body. 
