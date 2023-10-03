@@ -239,7 +239,7 @@ Kapan Menggunakannya: Saat ingin memberi gaya umum pada elemen, contohnya, p { c
 - Default Styling:<br>
 
 Manfaat: Memberikan gaya default pada elemen tanpa menggunakan kelas atau ID. <br>
-Kapan Menggunakannya: Untuk memberi gaya dasar pada elemen HTML seperti <p>, <h1>, atau <a>.
+Kapan Menggunakannya: Untuk memberi gaya dasar pada elemen HTML seperti tag p, h1, atau a.
 
 - Penggunaan di CSS Framework:<br>
 Manfaat: Digunakan dalam kerangka kerja CSS untuk memberi aturan gaya global.<br>
@@ -252,11 +252,11 @@ Kapan Menggunakannya: Ketika ingin membuat gaya dasar dan konsisten untuk elemen
 2. Jelaskan HTML 5 Tag yang kamu ketahui.
 
 ans : <br>
-   a. <html> — tag utama dalam HTML;
-   b. <head> — untuk bagian kepala dari dokumen;
-   c. <title> — untuk judul web;
-   d. <body> — untuk bagian body dari dokumen.
-   e. <button> - tag untuk membuat sebuah tombol yang dapat diklik
+   a. tag html — tag utama dalam HTML;
+   b. tag head — untuk bagian kepala dari dokumen;
+   c. tag title — untuk judul web;
+   d. tag body — untuk bagian body dari dokumen.
+   e. tag button - tag untuk membuat sebuah tombol yang dapat diklik
 
 3.  Jelaskan perbedaan antara margin dan padding.
 
