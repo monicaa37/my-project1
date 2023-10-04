@@ -5,12 +5,16 @@
 
   /* Tambahkan CSS untuk warna yang berbeda di baris terakhir */
   .last-row {
-      background-color: #FFC288; /* Warna background untuk baris terakhir */
+      background-color: #FCE09B; /* Warna background untuk baris terakhir */
       color: #000; /* Warna teks untuk baris terakhir */
   }
 
   body {
       background-color: #F8F0E5;
+  }
+
+  .card {
+    background-color: #FFE9A0; /* Ganti kode warna dengan warna yang Anda inginkan */
   }
 
 div.scroll-container {
@@ -20,7 +24,7 @@ div.scroll-container {
 }
 
 div.scroll-container img {
-  width: 175px; /* Ukuran gambar */
+  width: 200px; /* Ukuran gambar */
   height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
   margin-right: 10px; /* Jarak antara gambar */
 }
@@ -46,7 +50,7 @@ div.scroll-container img {
 <body>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid" style="background-color: #FFCC70;">
+    <div class="container-fluid" style="background-color: #FFC288;">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -71,11 +75,50 @@ div.scroll-container img {
     </div>
 </nav>
 
+
+{% comment %} <h1><mark>SHOPPING KAOS</mark></h1> {% endcomment %}
+
+<h2>Pilih Produk</h2>
+
+<div class="product-container">
+  <div class="product-item">
+<h5>Model 1</h5>
+<ul>
+    <li><cite>Name:</cite> Kaos Polos</li>
+    <li><cite>Amount:</cite> 1</li>
+    <li><cite>Description:</cite> Warna hitam</li>
+    <li><cite>Price:</cite> Rp 70000</li>
+    <li><cite>Ukuran:</cite> S - M</li>
+    <button>Cek Out</button>
+</ul>
+</div>
+<div class="product-item">
+<h5>Model 2</h5>
+<ul>
+    <li><cite>Name:</cite> Kaos Bermotif</li>
+    <li><cite>Amount:</cite> 1</li>
+    <li><cite>Description:</cite> Request warna</li>
+    <li><cite>Price:</cite> Rp 100000</li>
+    <li><cite>Ukuran:</cite> L - XL</li>
+    <button>Cek Out</button>
+</ul>
+<h5>Model 3</h5>
+<ul>
+    <li><cite>Name:</cite>Hoodie Mikey</li>
+    <li><cite>Amount:</cite> 1</li>
+    <li><cite>Description:</cite> Request warna</li>
+    <li><cite>Price:</cite> Rp 200000</li>
+    <li><cite>Ukuran:</cite> S - XL</li>
+    <button>Cek Out</button>
+</ul>
+</div>
+</div>
+
 <div class="scroll-container">
   <img src="https://i.ibb.co/DWxXzkq/ff7319d50bc6eed1d76a95b7c25b9ec4.jpg" alt="Cinque Terre">
   <img src="https://i.ibb.co/TbfMq8y/dee8b64277601ca7ef5c7361364ca5ca.jpg" alt="Forest">
   <img src="https://i.ibb.co/9GYqhQz/f00bfcfb1feb44a12643ed759e7b8a79.jpg" alt="Northern Lights">
-  <img src="https://i.ibb.co/x6kk38H/6a8744c2eb06ee33a119f56b962768b4.jpg" alt="Mountains">
+  <img src="https://i.ibb.co/G2c8Hjt/48ebdf5226e44f0d84907518310fc118.jpg" alt="Mountains">
 
   <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -84,38 +127,6 @@ div.scroll-container img {
       <p class="card-text">Jangan sampai ketinggalan yah</p>
     </div>
   </div>
-    
-</body>
-
-
-{% comment %} <h1><mark>SHOPPING KAOS</mark></h1> {% endcomment %}
-
-<h2>Pilih Produk</h2>
-
-<div class="product-container">
-  <div class="product-item">
-<h5>1. Produk 1</h5>
-<ul>
-    <li><cite>Name:</cite> Kaos Polos</li>
-    <li><cite>Amount:</cite> 1</li>
-    <li><cite>Description:</cite> Warna hitam</li>
-    <li><cite>Price:</cite> Rp 70000</li>
-    <li><cite>Ukuran:</cite> S - M</li>
-</ul>
-<button>Cek Out Yukk</button>
-</div>
-<div class="product-item">
-<h5>2. Produk 2</h5>
-<ul>
-    <li><cite>Name:</cite> Kaos Bermotif</li>
-    <li><cite>Amount:</cite> 2</li>
-    <li><cite>Description:</cite> Request warna</li>
-    <li><cite>Price:</cite> Rp 100000</li>
-    <li><cite>Ukuran:</cite> L - XL</li>
-</ul>
-<button>Cek Out Yukk</button>
-</div>
-</div>
 
 
 <table>
@@ -165,4 +176,5 @@ div.scroll-container img {
 
 <h5>Sesi terakhir login: {{ last_login }}</h5>
 
+</body>
 {% endblock content %}
