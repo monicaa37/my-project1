@@ -3,57 +3,87 @@
 
 <style>
 
-    /* Tambahkan CSS untuk warna yang berbeda di baris terakhir */
-    .last-row {
-        background-color: #98FB98; /* Warna background untuk baris terakhir */
-        color: #000; /* Warna teks untuk baris terakhir */
-    }
+  /* Tambahkan CSS untuk warna yang berbeda di baris terakhir */
+  .last-row {
+      background-color: #FFC288; /* Warna background untuk baris terakhir */
+      color: #000; /* Warna teks untuk baris terakhir */
+  }
 
-    body {
-        background-color: #F9F5F6;
-    }
+  body {
+      background-color: #F8F0E5;
+  }
+
+div.scroll-container {
+  white-space: nowrap;
+  padding: 10px;
+  overflow-x: auto; /* Mengaktifkan scroll horizontal jika gambar melebihi lebar container */
+}
+
+div.scroll-container img {
+  width: 175px; /* Ukuran gambar */
+  height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+  margin-right: 10px; /* Jarak antara gambar */
+}
+
+/* CSS untuk memposisikan Produk 1 dan 2 ke sebelah kanan */
+.product-container {
+    float: right; /* Mengatur container produk ke sisi kanan */
+    margin-top: 10px; /* Jarak antara container produk dengan elemen di atasnya */
+    margin-right: 10px; /* Jarak antara container produk dengan elemen di sebelah kirinya */
+    width: 300px; /* Lebar container produk */
+    text-align: right; /* Mengatur teks ke kanan di dalam container produk */
+}
+
+.product-item {
+    text-align: left; /* Mengatur teks produk ke kiri di dalam container produk */
+    margin-bottom: 10px; /* Jarak antara setiap item produk */
+}
+
 </style>
-
 
 
 {% comment %} <p>Class: PBP B </p>  {% endcomment %}
 <body>
 
-    <div class="card text-bg-success mb-3" style="max-width: 18rem;">
-      <img src="https://i.ibb.co/mzYffZB/cdcf1087035d64f782c4bc68f91bf975.jpg">
-        <div class="card-header">PROMO</div>
-        <div class="card-body">
-          <h5 class="card-title">AYO JANGAN SAMPAI KETINGGALAN</h5>
-          <p class="card-text">BUY 1 GET 2</p>
-        </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="background-color: #FFCC70;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">SHOPPING PAGE</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Welcome {{name}} !</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
+    </div>
+</nav>
 
-      
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid" style="background-color: #7EAA92;">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">SHOPPING PAGE</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Welcome {{name}} !</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
+<div class="scroll-container">
+  <img src="https://i.ibb.co/DWxXzkq/ff7319d50bc6eed1d76a95b7c25b9ec4.jpg" alt="Cinque Terre">
+  <img src="https://i.ibb.co/TbfMq8y/dee8b64277601ca7ef5c7361364ca5ca.jpg" alt="Forest">
+  <img src="https://i.ibb.co/9GYqhQz/f00bfcfb1feb44a12643ed759e7b8a79.jpg" alt="Northern Lights">
+  <img src="https://i.ibb.co/x6kk38H/6a8744c2eb06ee33a119f56b962768b4.jpg" alt="Mountains">
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Message For You</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">YUK BERBURU PROMO</h6>
+      <p class="card-text">Jangan sampai ketinggalan yah</p>
+    </div>
+  </div>
     
 </body>
 
@@ -62,6 +92,8 @@
 
 <h2>Pilih Produk</h2>
 
+<div class="product-container">
+  <div class="product-item">
 <h5>1. Produk 1</h5>
 <ul>
     <li><cite>Name:</cite> Kaos Polos</li>
@@ -71,7 +103,8 @@
     <li><cite>Ukuran:</cite> S - M</li>
 </ul>
 <button>Cek Out Yukk</button>
-
+</div>
+<div class="product-item">
 <h5>2. Produk 2</h5>
 <ul>
     <li><cite>Name:</cite> Kaos Bermotif</li>
@@ -81,9 +114,11 @@
     <li><cite>Ukuran:</cite> L - XL</li>
 </ul>
 <button>Cek Out Yukk</button>
+</div>
+</div>
+
 
 <table>
-  
     <tr>
         <th>Name</th>
         <th>Price</th>
@@ -94,46 +129,40 @@
     {% comment %} Berikut cara memperlihatkan data produk di bawah baris ini {% endcomment %}
 
     {% for product in products %}
-    {% comment %} memeriksa apakah iterasi saat ini adalah iterasi terakhir dalam loop. {% endcomment %}
-    {% comment %} forloop.last adalah atribut dari variabel forloop yang bernilai True jika iterasi saat ini adalah iterasi terakhir dalam loop. {% endcomment %}
-    {% comment %}  jika iterasi saat ini adalah iterasi terakhir (atau baris terakhir dalam tabel), maka tag <tr> akan memiliki kelas CSS last-row {% endcomment %}
-    <tr {% if forloop.last %}class="last-row"{% endif %}> 
-        <td>{{product.name}}</td>
-        <td>{{product.price}}</td>
-        <td>{{product.description}}</td>
-        <td>{{product.date_added}}</td>
-
-        <td>
-            <a href="{% url 'main:edit_product' product.pk %}">
-              
-                <button>
-                    Edit
-                </button>
-            </a>
-
-            <a href="{% url 'main:delete_product' product.pk %}">
+    <tr {% if forloop.last %}class="last-row"{% endif %}>
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.description}}</td>
+            <td>{{product.date_added}}</td>
+            <td>
+              <a href="{% url 'main:edit_product' product.pk %}">
+                  <button>
+                      Edit
+                  </button>
+              </a>
+              <a href="{% url 'main:delete_product' product.pk %}">
                 <button>
                     Delete
                 </button>
             </a>
-        </td>
-    </tr>
+          </td>
+        </tr>
     {% endfor %}
 </table>
 
-<br />
 
 <a href="{% url 'main:create_product' %}">
     <button>
         Add New Product
     </button>
 </a>
-<h5>Sesi terakhir login: {{ last_login }}</h5>
+
 <a href="{% url 'main:logout' %}">
-    <button>
-        Logout
-    </button>
+  <button>
+      Logout
+  </button>
 </a>
 
+<h5>Sesi terakhir login: {{ last_login }}</h5>
 
 {% endblock content %}
