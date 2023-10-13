@@ -6,7 +6,7 @@ Kelas   : PBP B
 
 Tautan Adaptable : https://inventory-monica.adaptable.app
 Tautan Github    : https://github.com/monicaa37/my-project1.git
-Tautan Aplikasi :  http://monica-gloria-tugas.pbp.cs.ui.ac.id.
+Tautan Aplikasi :  http://monica-gloria-tugas.pbp.cs.ui.ac.id
 
 ---------------------------------------------------TUGAS 2----------------------------------------------------
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
