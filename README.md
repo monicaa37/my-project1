@@ -138,7 +138,7 @@ hasil screenshot postman :
 5. html 
 ![screenshot html](images/html.png)
 
-----------------------------------------TUGAS4 --------------------------------------
+----------------------------------------------------TUGAS4 ---------------------------------------------------------
 
 1. Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
 
@@ -228,7 +228,7 @@ Ceklist 4
 
    - Membuat dua akun pengguna dengan masing-masing tiga dummy data menggunakan model yang telah dibuat pada aplikasi sebelumnya untuk setiap akun di lokal: Untuk membuat dummy data dapat dilakukan dengan "Add new product" pada halaman html. 
 
--------------------------------------------------------TUGAS 5----------------------------------------------------------
+-------------------------------------------------------TUGAS 5-----------------------------------------------------
 1.  Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
 
 Ans : <br> Manfaat Element Selector:
@@ -283,3 +283,47 @@ ans: <br> Tailwind CSS adalah kerangka kerja CSS "utility-first" yang memberikan
    - Kustomisasi halaman daftar inventori menjadi lebih berwarna maupun menggunakan apporach lain seperti menggunakan Card.
    
    <br>ans : Untuk menggunakan Card yang ada pada bootstrap, dapat dilakukan dengan copy kode yang ada pada wabsite bootstrap. Lalu, letakkan pada main html di dalam tag body. 
+
+   ------------------------------------TUGAS 6-----------------------------------------
+
+   1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+
+   ans: Asynchronous programming dan synchronous programming adalah dua paradigma eksekusi kode yang berbeda. Dalam synchronous programming, tugas-tugas dieksekusi secara berurutan, satu per satu, yang berarti setiap tugas harus menunggu tugas sebelumnya selesai sebelum dapat dijalankan. Sebaliknya, asynchronous programming memungkinkan eksekusi tugas-tugas secara bersamaan tanpa harus menunggu tugas sebelumnya selesai, memungkinkan program untuk melanjutkan eksekusi tugas-tugas lainnya tanpa terblokir oleh operasi yang memakan waktu. 
+
+2. Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+
+ans : Paradigma event driven : pendekatan pemrograman di mana eksekusi program terutama berdasarkan kejadian (events) yang terjadi pada sistem, seperti interaksi pengguna, input dari perangkat, atau data yang diterima dari server.
+
+Sebagai contoh, ketika pengguna mengklik tombol "Muat Data" pada halaman web, sebuah event click terjadi. Dengan menggunakan paradigma event-driven maka  dapat menetapkan sebuah event listener pada tombol tersebut. Ketika tombol diklik, event listener akan memicu permintaan AJAX ke server untuk mengambil data tanpa harus memuat ulang seluruh halaman web. Setelah data diterima dari server, event listener juga dapat mengatur tata letak halaman web untuk menampilkan data yang baru saja diambil. 
+
+3. Jelaskan penerapan asynchronous programming pada AJAX.
+
+ans : Pada AJAX, asynchronous programming memungkinkan permintaan data dari server dan pembaruan halaman web tanpa menghentikan eksekusi program. Saat menggunakan XMLHttpRequest atau metode fetch dalam JavaScript, permintaan data dapat dikirim ke server secara asynchronous. Ini berarti, ketika permintaan sedang dalam proses, program JavaScript dapat melanjutkan eksekusi instruksi berikutnya tanpa harus menunggu respons dari server. Ketika respons diterima, fungsi callback dijalankan, memungkinkan manipulasi data dan pembaruan antarmuka pengguna sesuai dengan respons server, yang pada gilirannya menciptakan pengalaman web yang lebih dinamis dan responsif bagi pengguna.
+
+4. Penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.
+
+ans : Fetch API vs. jQuery untuk AJAX:
+<br> 1. Fetch API
+- Ringan dan Terintegrasi
+- Fleksibel dan Kuat
+- Asinkron
+
+2. jQuery
+
+- Sederhana dan Mudah Digunakan
+- Kompatibilitas Browser
+- Beragam Plugin
+
+Pilihan antara Fetch API dan jQuery untuk AJAX bergantung pada kebutuhan proyek dan preferensi pengembang. Jika Anda bekerja pada proyek modern yang membutuhkan AJAX dengan performa tinggi, Fetch API adalah pilihan yang sangat baik. Ini memberikan kontrol yang baik dan memastikan kode bersih dan ringan.
+
+5. Bagaimana cara mengimplementasikan checklist 
+
+- AJAX GET
+
+-  AJAX POST 
+- Melakukan perintah collectstatic:<br>
+1. Lakukan import os<br>
+2. Tambahkan kode static root <br>
+3. Jalankan perintah di cmd untuk collectstatic 
+
+- 
