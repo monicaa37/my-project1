@@ -6,6 +6,7 @@ Kelas   : PBP B
 
 Tautan Adaptable : https://inventory-monica.adaptable.app
 Tautan Github    : https://github.com/monicaa37/my-project1.git
+Tautan Aplikasi :  http://monica-gloria-tugas.pbp.cs.ui.ac.id.
 
 ---------------------------------------------------TUGAS 2----------------------------------------------------
 1. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step.
@@ -318,12 +319,11 @@ Pilihan antara Fetch API dan jQuery untuk AJAX bergantung pada kebutuhan proyek 
 
 5. Bagaimana cara mengimplementasikan checklist 
 
-- AJAX GET
-
--  AJAX POST 
+- AJAX GET <br>
+-  AJAX POST <br>
 - Melakukan perintah collectstatic:<br>
 1. Lakukan import os<br>
 2. Tambahkan kode static root <br>
 3. Jalankan perintah di cmd untuk collectstatic 
 
-- 
+

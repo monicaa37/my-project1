@@ -37,13 +37,15 @@ def show_main(request):
     return render(request, "main.html", context)
 
 def create_product(request):
-    form = ProductForm(request.POST or None)
-
-    if form.is_valid() and request.method == "POST":
-        product = form.save(commit=False)
-        product.user = request.user
-        product.save()
-        return HttpResponseRedirect(reverse('main:show_main'))
+    if request.method == "POST":
+        form = ProductForm(request.POST, request.FILES)  # Menggunakan request.FILES untuk menghandle gambar
+        if form.is_valid():
+            product = form.save(commit=False)
+            product.user = request.user
+            product.save()
+            return HttpResponseRedirect(reverse('main:show_main'))
+    else :
+        form = ProductForm()
     context = {'form': form}
     return render(request, "create_product.html", context)
 
@@ -128,7 +130,6 @@ def get_product_json(request):
 def add_product_ajax(request):
     if request.method == 'POST':
         name = request.POST.get("name")
-        amount = request.POST.get("amount")
         price = request.POST.get("price")
         description = request.POST.get("description")
         user = request.user
@@ -138,7 +139,7 @@ def add_product_ajax(request):
         
         return HttpResponse(b"CREATED", status=201)
 
-        return HttpResponseNotFound()
+    return HttpResponseNotFound()
 
 @csrf_exempt
 def remove_all_ajax(request):

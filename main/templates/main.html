@@ -51,6 +51,7 @@ div.scroll-container img {
 
 
 {% comment %} <p>Class: PBP B </p>  {% endcomment %}
+<h2>Pilih Produk</h2>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid" style="background-color: #FFC288;">
@@ -78,10 +79,6 @@ div.scroll-container img {
     </div>
 </nav>
 
-
-{% comment %} <h1><mark>SHOPPING KAOS</mark></h1> {% endcomment %}
-
-<h2>Pilih Produk</h2>
 
 <div class="product-container">
   <div class="product-item">
@@ -126,6 +123,22 @@ div.scroll-container img {
   
 <div class="row" id="product_cards"></div>
 
+<div style ="background-color: #a7dbd8;">
+  <table id ="product_table" style="background-color: #ADD8E6"> </table>
+  </div>
+
+<br />
+<a href="{% url 'main:create_product' %}">
+  <button>
+      Add New Product
+  </button>
+</a>
+
+<a href="{% url 'main:logout' %}">
+<button>
+    Logout
+</button>
+</a>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -135,16 +148,12 @@ div.scroll-container img {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="form" onsubmit="return false;">
+                <form method = "POST" id="form" onsubmit="return false;">
                     {% csrf_token %}
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Name:</label>
                         <input type="text" class="form-control" id="name" name="name"></input>
                     </div>
-                    <div class="mb-3">
-                      <label for="name" class="col-form-label">Amount:</label>
-                      <input type="number" class="form-control" id="amount" name="amount"></input>
-                  </div>
                     <div class="mb-3">
                         <label for="price" class="col-form-label">Price:</label>
                         <input type="number" class="form-control" id="price" name="price"></input>
@@ -164,50 +173,31 @@ div.scroll-container img {
 </div>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product by AJAX</button>
 
-<br />
-<a href="{% url 'main:create_product' %}">
-  <button>
-      Add New Product
-  </button>
-</a>
 
-<a href="{% url 'main:logout' %}">
-<button>
-    Logout
-</button>
-</a>
-
-<div class="row" id="product_container"></div>
 <script>
   async function getProducts() {
       return fetch("{% url 'main:get_product_json' %}").then((res) => res.json())
   }
 
   async function refreshProducts() {
-    const productCards = document.getElementById("product_cards");
-    productCards.innerHTML = ""; // Clear existing cards
+    document.getElementById("product_cards").innerHTML = ""
     const products = await getProducts();
-
-    products.forEach((item) => {
-        const card = `
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100 custom-card"> 
-                <div class="card-body">
-                    <h5 class="card-title">${item.fields.name}</h5>
-                    <p class="card-text">${item.fields.description}</p>
-                    <a href="#" class="btn btn-primary" onclick="removeItem(${item.pk})" style="background-color: #392004;">Hapus</a>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Price: ${item.fields.price}</li>
-                    <li class="list-group-item">Stok: ${item.fields.amount}</li>
-                    <li class="list-group-item">Date Added: ${item.fields.date_added}</li>
-                  </div>
-                </ul>
-            </div>
-        </div>
-        `;
-
-        productCards.insertAdjacentHTML("beforeend", card);
-    });
+    let htmlString = `<tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Date Added</th>
+  </tr>`
+  products.forEach((item) => {
+      htmlString += `\n<tr>
+      <td>${item.fields.name}</td>
+      <td>${item.fields.price}</td>
+      <td>${item.fields.description}</td>
+      <td>${item.fields.date_added}</td>
+  </tr>` 
+  })
+  
+  document.getElementById("product_table").innerHTML = htmlString
 }
 
   refreshProducts()
@@ -217,6 +207,7 @@ div.scroll-container img {
       method: "POST",
       body: new FormData(document.querySelector('#form'))
     }).then(refreshProducts)
+
     document.getElementById("form").reset()
     return false
   }
